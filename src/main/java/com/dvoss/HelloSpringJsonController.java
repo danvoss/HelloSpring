@@ -17,7 +17,7 @@ public class HelloSpringJsonController {
     }
 
     @RequestMapping(path = "/person.json", method = RequestMethod.POST)
-    public void addPerson(@RequestBody Person person) { // can only be one request body per route, but could be a hashmap instead of person obj
+    public void addPerson(@RequestBody Person person) { // can only be one request body per route, but could be a hashmap instead of custom obj
         System.out.println("Received: " + person.name);
     }
 }
